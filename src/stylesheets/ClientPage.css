@@ -1,0 +1,81 @@
+.ClientPage {
+    display: flex;
+    gap: 5rem;
+    margin: 150px 50px;
+}
+
+.ClientPage .btn.home {
+    position: fixed;
+    z-index: 1001;
+    top: 5%;
+    right: 8.5%;
+    width: 120px;
+    text-align: center;
+}
+
+.ClientPage .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+    background: var(--light-yellow);
+}
+
+.ClientPage .title h3 {
+    width: 90%;
+}
+
+.ClientPage .title p {
+    width: 10%;
+    font-weight: bold;
+}
+
+.ClientPage form {
+    text-align: end;
+}
+
+.ClientPage table, th, td {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-collapse: collapse;
+}
+
+.ClientPage table input {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: none;
+}
+
+.ClientPage table tr:nth-child(odd) {
+    background-color: var(--yellow);
+}
+
+.ClientPage .months {
+    width: 50%;
+}
+
+.ClientPage .months .months_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+    margin-top: 30px;
+}
+
+.ClientPage .months .months_container a {
+    padding: 5px 10px;
+    color: var(--black);
+    font-family: Arial;
+    text-transform: capitalize;
+    background: var(--slate-300);
+    border: 1px solid var(--slate-700);
+}
+
+.ClientPage .months .months_container a:hover {
+    color: var(--white);
+    background: var(--slate-700);
+}

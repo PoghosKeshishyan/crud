@@ -1,0 +1,104 @@
+.SendEmailPage {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 100px;
+}
+
+.SendEmailPage button.back {
+    position: fixed;
+    z-index: 1001;
+    top: 3%;
+    right: 8.5%;
+    width: 120px;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.SendEmailPage .btn.home {
+    position: fixed;
+    z-index: 1001;
+    top: 8%;
+    right: 8.5%;
+    width: 120px;
+    text-align: center;
+}
+
+.SendEmailPage form {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    margin: 20px;
+}
+
+.SendEmailPage .container {
+    width: 900px;
+    border: 2px solid;
+}
+
+.SendEmailPage .container .title {
+    position: relative;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.SendEmailPage .container .title .logo {
+    position: absolute;
+    width: 100px;
+    top: 0;
+    right: 0;
+}
+
+.SendEmailPage .container .title .logo img {
+    width: 100%;
+}
+
+.SendEmailPage .container .client_info p {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.SendEmailPage .container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.SendEmailPage .container table thead th {
+    text-align: center;
+}
+
+.SendEmailPage .container table tbody th {
+    text-align: left;
+}
+
+.SendEmailPage .container table td {
+    font-weight: normal;
+    text-align: center;
+}
+
+.SendEmailPage .container table td input {
+    width: 80px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.SendEmailPage .container table td,
+.SendEmailPage .container table th {
+    border-top: 2px solid;
+    border-right: 2px solid;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.SendEmailPage .container table td:last-child,
+.SendEmailPage .container table th:last-child {
+    border-right: none;
+}
+
+.SendEmailPage .btn.email {
+    font-size: 1.1rem;
+}

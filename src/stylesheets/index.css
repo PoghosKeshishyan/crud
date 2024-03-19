@@ -1,0 +1,54 @@
+@import './Header.css';
+@import './HomePage.css';
+@import './ClientPage.css';
+@import './DetailPage.css';
+@import './SendEmailPage.css';
+@import './ModalAddClient.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: all .2s linear;
+    font-family: 'Bell MT';
+}
+
+:root {
+    --white: #ffffff;
+    --yellow: #FFC000;
+    --black: #000000;
+    --blue: #bfdbfe;
+    --sky: #0284c7;
+    --light-yellow: #FFF2CC;
+    --alpha-blue: #96d4d466;
+    --slate-300: #cbd5e1;
+    --slate-700: #334155;
+    --alpha-slate: #2c3746b1;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    color: var(--black);
+    font-family: Arial;
+    background: var(--slate-300);
+    border: 1px solid var(--slate-700);
+}
+
+.btn:hover {
+    color: var(--white);
+    background: var(--slate-700);
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
