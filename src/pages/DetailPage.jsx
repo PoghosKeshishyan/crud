@@ -4,7 +4,7 @@ import axios from '../axios';
 
 export function DetailPage() {
     const [client, setClient] = useState([]);
-    const [weeks, setWeeks] = useState([]);
+    const [days, setDays] = useState([]);
     const { id, month } = useParams();
     const navigate = useNavigate();
 
@@ -16,9 +16,9 @@ export function DetailPage() {
         const responseClient = await axios.get(`parents/${id}`);
         setClient(responseClient.data);
 
-        const responseWeeks = await axios.get(`weeks?clientId=${id}&month=${month}`);
+        const responseDays = await axios.get(`days?parentId=${id}&month=${month}`);
 
-        const result = responseWeeks.data.reduce((acc, curr, index) => {
+        const result = responseDays.data.reduce((acc, curr, index) => {
             const subIndex = Math.floor(index / 7);
 
             if (!acc[subIndex]) {
@@ -29,7 +29,7 @@ export function DetailPage() {
             return acc;
         }, []);
 
-        setWeeks(result);
+        setDays(result);
     }
 
     function calculateTotalTime(week) {
@@ -61,8 +61,8 @@ export function DetailPage() {
         let currentId;
         let currentObj = { completed: null };
 
-        const newWeeks = weeks.map(week => {
-            week.map(day => {
+        const newDays = days.map(item => {
+            item.map(day => {
                 if (day.id === id) {
                     currentId = id;
                     day.completed = !day.completed;
@@ -72,20 +72,20 @@ export function DetailPage() {
                 return day;
             })
 
-            return week;
+            return item;
         })
 
-        setWeeks(newWeeks);
+        setDays(newDays);
 
-        await axios.patch(`weeks/${currentId}`, currentObj);
+        await axios.patch(`days/${currentId}`, currentObj);
     }
 
     const onChangeInput = async (event, id) => {
         let currentId;
         let currentWeek = {};
 
-        const newWeeks = weeks.map(week => {
-            week.map(day => {
+        const newDays = days.map(item => {
+            item.map(day => {
                 if (day.id === id) {
                     currentId = id;
                     day[event.target.name] = event.target.value;
@@ -95,12 +95,12 @@ export function DetailPage() {
                 return day;
             })
 
-            return week;
+            return item;
         })
 
-        setWeeks(newWeeks);
+        setDays(newDays);
 
-        await axios.patch(`weeks/${currentId}`, currentWeek);
+        await axios.patch(`days/${currentId}`, currentWeek);
     }
 
     const handlerEmailBtn = (week, index) => {
@@ -130,7 +130,7 @@ export function DetailPage() {
 
             <div className='calendar_container'>
                 {
-                    weeks.map((item, index) => (
+                    days.map((item, index) => (
                         <div key={index} className='item'>
                             <div className='content'>
                                 {
