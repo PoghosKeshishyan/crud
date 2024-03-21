@@ -13,11 +13,11 @@ export function DetailPage() {
     }, [])
 
     const loadingData = async () => {
-        const responseClient = await axios.get(`clients/${id}`);
+        const responseClient = await axios.get(`parents/${id}`);
         setClient(responseClient.data);
 
         const responseWeeks = await axios.get(`weeks?clientId=${id}&month=${month}`);
-        console.log(responseWeeks);
+
         const result = responseWeeks.data.reduce((acc, curr, index) => {
             const subIndex = Math.floor(index / 7);
 

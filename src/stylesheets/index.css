@@ -4,6 +4,7 @@
 @import './DetailPage.css';
 @import './SendEmailPage.css';
 @import './ModalAddClient.css';
+@import './ModalAddChild.css';
 
 * {
     margin: 0;

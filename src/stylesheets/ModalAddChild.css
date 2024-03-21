@@ -1,4 +1,4 @@
-.ModalAddClient .dark_bg {
+.ModalAddChild .dark_bg {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,11 +10,11 @@
     background: var(--alpha-slate);
 }
 
-.ModalAddClient .close_modal {
+.ModalAddChild .close_modal {
     position: absolute;
-    top: 75px;
-    z-index: 1002;
-    margin-left: 50px;
+    top: 109px;
+    z-index: 1003;
+    margin-left: 400px;
     font-size: 3rem;
     color: var(--white);
     font-weight: bold;
@@ -22,9 +22,9 @@
     cursor: pointer;
 }
 
-.ModalAddClient form {
+.ModalAddChild form {
     position: absolute;
-    top: 80px;
+    top: 120px;
     left: 50%;
     z-index: 1002;
     width: 500px;
@@ -32,7 +32,11 @@
     transform: translateX(-50%);
 }
 
-.ModalAddClient form .form_item {
+.ModalAddChild form .title {
+    background: var(--yellow);
+}
+
+.ModalAddChild form .form_item {
     display: flex;
     align-items: center;
     margin: 10px 20px;
@@ -40,13 +44,14 @@
     border: 1px solid var(--sky);
 }
 
-.ModalAddClient form .form_item p {
+.ModalAddChild form .form_item p {
     width: 400px;
     font-size: 1.1rem;
+    text-align: left;
     border-right: 1px solid;
 }
 
-.ModalAddClient form .form_item input {
+.ModalAddChild form .form_item input {
     width: 100%;
     margin-left: 10px;
     padding: 5px;
@@ -54,13 +59,13 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.ModalAddClient form .form_item:last-child {
+.ModalAddChild form .form_item:last-child {
     justify-content: end;
     padding: 0;
     border: none;
 }
 
-.ModalAddClient form .form_item:last-child input {
+.ModalAddChild form .form_item:last-child input {
     width: auto;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;

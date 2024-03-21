@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import axios from '../axios';
 
-export function ModalAddClient({ setShowModal, loadingClients }) {
+export function ModalAddChild({ id, setShowModal, loadingData }) {
     const [formData, setFormData] = useState({
         name: '',
-        address: '',
-        telephone: '',
-        email: '',
+        birth: '',
+        parentId: id,
         discharge: '',
+        number_of_hours: '',
         enrollment: new Date().toISOString().split('T')[0],
     });
 
@@ -17,63 +17,64 @@ export function ModalAddClient({ setShowModal, loadingClients }) {
 
     const submitHandler = async (event) => {
         event.preventDefault();
-        await axios.post('parents', formData);
-        loadingClients();
+        console.log(formData);
+        await axios.post('children', formData);
+        loadingData();
         setShowModal();
     }
 
     return (
-        <div className='ModalAddClient'>
+        <div className='ModalAddChild'>
             <div className='dark_bg' onClick={() => setShowModal(false)}></div>
             <div className='close_modal' onClick={() => setShowModal(false)}>&times;</div>
 
             <form onSubmit={submitHandler}>
-                <h2 className='title'>Add client</h2>
+                <h2 className='title'>Add child</h2>
 
                 <div className='form_item'>
-                    <p>Parent's name:</p>
+                    <p>Child's name:</p>
 
                     <input
+                        required
                         type='text'
                         name='name'
-                        required
                         value={formData.name}
                         onChange={onChangeInput}
                     />
                 </div>
 
                 <div className='form_item'>
-                    <p>Address:</p>
+                    <p>Total week hours based on the contract/agreement:</p>
 
                     <input
-                        type='text'
-                        name='address'
+                        type='number'
+                        name='number_of_hours'
                         required
-                        value={formData.address}
+                        value={formData.number_of_hours}
                         onChange={onChangeInput}
                     />
                 </div>
 
                 <div className='form_item'>
-                    <p>Tel.</p>
+                    <p>Date of birth:</p>
 
                     <input
-                        type='tel'
-                        name='telephone'
+                        type='date'
+                        name='birth'
                         required
-                        value={formData.telephone}
+                        value={formData.birth}
                         onChange={onChangeInput}
                     />
                 </div>
 
                 <div className='form_item'>
-                    <p>E-mail</p>
+                    <p>Date of enrollment:</p>
 
                     <input
-                        type='email'
-                        name='email'
+                        type='date'
+                        name='enrollment'
                         required
-                        value={formData.email}
+                        value={formData.enrollment}
                         onChange={onChangeInput}
                     />
                 </div>

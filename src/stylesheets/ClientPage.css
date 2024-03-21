@@ -36,7 +36,14 @@
     text-align: end;
 }
 
-.ClientPage table, th, td {
+.ClientPage table {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--slate-300);
+}
+
+.ClientPage table, 
+.ClientPage table th, 
+.ClientPage table td {
     text-align: left;
     font-weight: bold;
     font-size: 1.2rem;
@@ -51,8 +58,21 @@
     background: none;
 }
 
+.ClientPage .parentsForm table {
+    width: 100%;
+}
+
+.ClientPage .childrenForm table td:first-child,
+.ClientPage .parentsForm table td:first-child {
+    width: 230px;
+}
+
 .ClientPage table tr:nth-child(odd) {
     background-color: var(--yellow);
+}
+
+.ClientPage .info form .btn {
+    margin-bottom: 10px;
 }
 
 .ClientPage .months {

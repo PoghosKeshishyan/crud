@@ -28,7 +28,7 @@ export function SendEmailPage() {
     const headerResponse = await axios.get('header');
     setHeader(headerResponse.data);
 
-    const responseClient = await axios.get(`clients/${id}`);
+    const responseClient = await axios.get(`parents/${id}`);
     setClient(responseClient.data);
 
     setQueryData({
@@ -56,6 +56,7 @@ export function SendEmailPage() {
     const dataToBeSent = {...header, parent, child, email, ...queryData, ...formData};
 
     console.log(dataToBeSent);
+    alert(JSON.stringify(dataToBeSent, null, 2))
   }
 
   return (
