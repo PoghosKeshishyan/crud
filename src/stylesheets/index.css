@@ -3,8 +3,11 @@
 @import './ClientPage.css';
 @import './DetailPage.css';
 @import './SendEmailPage.css';
+@import './ProfilePage.css';
+@import './ProfileFolderPage.css';
 @import './ModalAddClient.css';
 @import './ModalAddChild.css';
+@import './ModalAddFile.css';
 
 * {
     margin: 0;
@@ -23,6 +26,7 @@
     --black: #000000;
     --blue: #bfdbfe;
     --sky: #0284c7;
+    --red: #ff0000;
     --light-yellow: #FFF2CC;
     --alpha-blue: #96d4d466;
     --slate-300: #cbd5e1;

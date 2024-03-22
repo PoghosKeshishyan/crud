@@ -1,0 +1,68 @@
+.ProfileFolderPage {
+    margin: 150px 50px;
+}
+
+.ProfileFolderPage .btn {
+    font-size: 1rem;
+}
+
+.ProfileFolderPage .empty_folder {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+.ProfileFolderPage .empty_folder p {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ProfileFolderPage .empty_folder img {
+    width: 100px;
+}
+
+.ProfileFolderPage .files_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 40px 0;
+}
+
+.ProfileFolderPage .files_container .file {
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.ProfileFolderPage .files_container .file .delete_file {
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    font-size: 1.5rem;
+    color: var(--white);
+    -webkit-text-stroke: 1px;
+    border-radius: 50%;
+    background: var(--red);
+}
+
+.ProfileFolderPage .files_container .file p {
+    padding-top: 10px;
+    font-size: .9rem;
+    font-family: 'Segoe UI';
+}
+
+.ProfileFolderPage .files_container .file img {
+    width: 100%;
+}
+
+.ProfileFolderPage .files_container .file:hover img,
+.ProfileFolderPage .files_container .file:hover .delete_file {
+    opacity: .5;
+}

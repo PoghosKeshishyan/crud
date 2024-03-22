@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Header } from './components/Header';
 import { HomePage } from './pages/HomePage';
 import { ProfilePage } from './pages/ProfilePage';
+import { ProfileFolderPage } from './pages/ProfileFolderPage';
 import { ClientPage } from './pages/ClientPage';
 import { DetailPage } from './pages/DetailPage';
 import { SendEmailPage } from './pages/SendEmailPage';
@@ -28,6 +29,7 @@ export function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/profile' element={<ProfilePage />} />
+          <Route path='/profile/folder/:folderId' element={<ProfileFolderPage />} />
           <Route path='/client/:id' element={<ClientPage />} />
           <Route path='/client/:id/:month' element={<DetailPage />} />
           <Route path='/client/:id/:month/:week/result' element={<SendEmailPage />} />

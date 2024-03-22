@@ -43,61 +43,65 @@
     text-transform: capitalize;
 }
 
-.DetailPage .calendar_container .item {
+.DetailPage .Calendar .item {
     display: flex;
     align-items: center;
 }
 
-.DetailPage .calendar_container .item .content {
+.DetailPage .Calendar .item .content {
     display: flex;
     width: 950px;
     margin: 1px 0;
 }
 
-.DetailPage .calendar_container .item .sub_item {
+.DetailPage .Calendar .item .sub_item {
     width: 110px;
     margin: 20px 20px 20px 0;
     border: 1px solid;
     text-align: left;
 }
 
-.DetailPage .calendar_container .item .sub_item.active {
+.DetailPage .Calendar .item .sub_item.active {
     background: var(--slate-300);
 }
 
-.DetailPage .calendar_container .item h3 {
+.DetailPage .Calendar .item h3 {
     padding: 5px;
     text-align: center;
     border-bottom: 1px solid;
 }
 
-.DetailPage .calendar_container .item .sub_item input[type=checkbox] {
+.DetailPage .Calendar .item .sub_item input[type=checkbox] {
     margin: 5px;
     width: 15px;
     height: 15px;
 }
 
-.DetailPage .calendar_container .item .sub_item input {
+.DetailPage .Calendar .item .sub_item input {
     width: 100%;
     background: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.DetailPage .calendar_container .item .actions {
+.DetailPage .Calendar .item .actions {
     font-weight: bold;
     font-size: 1rem;
 }
 
-.DetailPage .calendar_container .item .actions span {
+.DetailPage .Calendar .item .actions span {
     display: inline-block;
     width: 230px;
     margin-right: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.DetailPage .calendar_container .item .actions button {
+.DetailPage .Calendar .item .actions button {
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.DetailPage .Calendar .item .actions p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

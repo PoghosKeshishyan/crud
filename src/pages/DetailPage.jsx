@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
+import { Calendar } from '../components/Calendar';
 import { Link, useParams, useNavigate, createSearchParams } from 'react-router-dom';
 import axios from '../axios';
 
 export function DetailPage() {
     const [client, setClient] = useState([]);
+    const [child, setChild] = useState([]);
     const [days, setDays] = useState([]);
     const { id, month } = useParams();
     const navigate = useNavigate();
@@ -16,9 +18,15 @@ export function DetailPage() {
         const responseClient = await axios.get(`parents/${id}`);
         setClient(responseClient.data);
 
+        const responseChildren = await axios.get(`children?parentId=${id}`);
+        setChild(responseChildren.data[0]);
+
+        const responseDates = await axios.get(`dates?parentId=${id}&month=${month}`);
+        const dates = responseDates.data;
+
         const responseDays = await axios.get(`days?parentId=${id}&month=${month}`);
 
-        const result = responseDays.data.reduce((acc, curr, index) => {
+        const newDays = responseDays.data.reduce((acc, curr, index) => {
             const subIndex = Math.floor(index / 7);
 
             if (!acc[subIndex]) {
@@ -28,6 +36,10 @@ export function DetailPage() {
             acc[subIndex].push(curr);
             return acc;
         }, []);
+
+        const result = newDays.map((day, index) => {
+            return [day, dates[index]];
+        })
 
         setDays(result);
     }
@@ -116,7 +128,7 @@ export function DetailPage() {
     return (
         <div className='DetailPage'>
             <button onClick={() => navigate(-1)} className='btn back'>
-                {client.parent?.split(' ')[0]}
+                {client.name?.split(' ')[0]}
             </button>
 
             <Link to='/' className='btn home'>Home</Link>
@@ -125,59 +137,16 @@ export function DetailPage() {
 
             <div className='info_client'>
                 <p className='month'>{month}-24</p>
-                <p>Child’s Name: {client.child}</p>
+                <p>Child’s Name: {child.name}</p>
             </div>
 
-            <div className='calendar_container'>
-                {
-                    days.map((item, index) => (
-                        <div key={index} className='item'>
-                            <div className='content'>
-                                {
-                                    item.map(elem => (
-                                        <div key={elem.id} className={elem.disabled ? 'sub_item active' : 'sub_item'}>
-                                            <h3>{elem.title} {elem.disabled}</h3>
-
-                                            <form>
-                                                <input
-                                                    type='checkbox'
-                                                    name='completed'
-                                                    checked={elem.completed}
-                                                    onChange={() => onCheckDay(elem.id)}
-                                                />
-
-                                                <input
-                                                    type='time'
-                                                    name='arrived'
-                                                    className='arrived'
-                                                    value={elem.arrived}
-                                                    onChange={e => onChangeInput(e, elem.id)}
-                                                />
-
-                                                <input
-                                                    type='time'
-                                                    name='isGone'
-                                                    className='isGone'
-                                                    value={elem.isGone}
-                                                    onChange={e => onChangeInput(e, elem.id)}
-                                                />
-                                            </form>
-                                        </div>
-                                    ))
-                                }
-                            </div>
-
-                            <div className='actions'>
-                                <span>Total time in week: {calculateTotalTime(item)} Hours</span>
-
-                                <button onClick={() => handlerEmailBtn(item, index)} className='btn'>
-                                    Email
-                                </button>
-                            </div>
-                        </div>
-                    ))
-                }
-            </div>
+            <Calendar 
+              days={days} 
+              onCheckDay={onCheckDay} 
+              onChangeInput={onChangeInput} 
+              calculateTotalTime={calculateTotalTime} 
+              handlerEmailBtn={handlerEmailBtn} 
+            />
         </div>
     )
 }

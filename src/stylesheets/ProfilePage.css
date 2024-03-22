@@ -1,0 +1,93 @@
+.ProfilePage {
+    margin: 150px 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.ProfilePage .editProfile {
+    width: 500px;
+}
+
+.ProfilePage .editProfile form .inputBox:first-child {
+    border-bottom: 1px solid var(--slate-300);
+}
+
+.ProfilePage .editProfile form .inputBox:nth-child(2) {
+    padding-top: 10px;
+}
+
+.ProfilePage .editProfile form .inputBox p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Segoe UI';
+}
+
+.ProfilePage .editProfile form .inputBox input[type=text] {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.ProfilePage .editProfile form .inputBox input[type="file"] {
+    display: none;
+}
+
+.ProfilePage .editProfile form .inputBox .file-upload-container {
+    padding: 10px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.ProfilePage .editProfile form .inputBox .file-upload-button {
+    display: inline-block;
+    padding: 8px 16px;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: var(--sky);
+    font-family: 'Segoe UI';
+}
+
+.ProfilePage .editProfile form .inputBox .file-upload-label {
+    margin-left: 10px;
+}
+
+.ProfilePage .editProfile form .inputBox .file-name-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.ProfilePage .editProfile form .btn {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.ProfilePage .Folders {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.ProfilePage .Folders .folder {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ProfilePage .Folders .folder img:hover {
+    opacity: .6;
+}
+
+.ProfilePage .Folders .folder p {
+    margin-top: 10px;
+    color: var(--sky);
+    font-family: Arial, Helvetica, sans-serif;
+}

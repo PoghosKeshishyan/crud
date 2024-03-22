@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Mrs. N’s Fireflies Child Care & Preschool",
-    "logo": "/logo.jpg"
+    "logo": "http://localhost:5000/uploads/2.jpg"
   },
   "parents": [
     {
@@ -112,8 +112,7 @@
       "completed": false,
       "month": "january",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "1",
@@ -124,8 +123,7 @@
       "completed": true,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "2",
@@ -136,8 +134,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "3",
@@ -148,8 +145,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "4",
@@ -160,8 +156,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "5",
@@ -172,8 +167,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "6",
@@ -184,12 +178,8 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
-
-
-
     {
       "id": "7",
       "title": "Sun 7",
@@ -199,8 +189,7 @@
       "completed": true,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "8",
@@ -211,8 +200,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "9",
@@ -223,8 +211,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "10",
@@ -235,8 +222,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "11",
@@ -247,8 +233,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "12",
@@ -259,8 +244,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "13",
@@ -271,14 +255,8 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
-
-
-
-
-
     {
       "id": "14",
       "title": "Sun 14",
@@ -288,8 +266,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "15",
@@ -300,8 +277,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "16",
@@ -312,8 +288,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "17",
@@ -324,8 +299,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "18",
@@ -336,8 +310,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "19",
@@ -348,8 +321,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "20",
@@ -360,8 +332,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "21",
@@ -372,8 +343,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "22",
@@ -384,8 +354,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "23",
@@ -396,8 +365,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "24",
@@ -408,8 +376,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "25",
@@ -420,8 +387,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "26",
@@ -432,8 +398,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "27",
@@ -444,8 +409,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "28",
@@ -456,8 +420,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "29",
@@ -468,8 +431,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "30",
@@ -480,8 +442,7 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "31",
@@ -492,16 +453,8 @@
       "completed": false,
       "month": "january",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
-
-
-
-
-
-
-
     {
       "id": "2854",
       "title": "(Jan) Sun 28",
@@ -511,8 +464,7 @@
       "completed": false,
       "month": "february",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "gh49",
@@ -523,8 +475,7 @@
       "completed": false,
       "month": "february",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "3750",
@@ -535,8 +486,7 @@
       "completed": false,
       "month": "february",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "47431",
@@ -547,11 +497,8 @@
       "completed": false,
       "month": "february",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
-
-
     {
       "id": "32",
       "title": "Thu 1",
@@ -561,8 +508,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "33",
@@ -573,8 +519,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "34",
@@ -585,14 +530,8 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
-
-
-
-
-
     {
       "id": "35",
       "title": "Sun 4",
@@ -602,8 +541,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "36",
@@ -614,8 +552,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "37",
@@ -626,8 +563,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "38",
@@ -638,8 +574,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "39",
@@ -650,8 +585,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "40",
@@ -662,8 +596,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "41",
@@ -674,15 +607,8 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
-
-
-
-
-
-
     {
       "id": "42",
       "title": "Sun 11",
@@ -692,8 +618,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "43",
@@ -704,8 +629,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "44",
@@ -716,8 +640,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "45",
@@ -728,8 +651,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "46",
@@ -740,8 +662,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "47",
@@ -752,8 +673,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "48",
@@ -764,14 +684,8 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
-
-
-
-
-
     {
       "id": "49",
       "title": "Sun 18",
@@ -781,8 +695,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "50",
@@ -793,8 +706,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "51",
@@ -805,8 +717,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "52",
@@ -817,8 +728,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "53",
@@ -829,8 +739,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "54",
@@ -841,8 +750,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "55",
@@ -853,15 +761,8 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
-
-
-
-
-
-
     {
       "id": "56",
       "title": "Sun 25",
@@ -871,8 +772,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "57",
@@ -883,8 +783,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "58",
@@ -895,8 +794,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "59",
@@ -907,8 +805,7 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "60",
@@ -919,15 +816,8 @@
       "completed": false,
       "month": "february",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
-
-
-
-
-
-
     {
       "id": "sad56",
       "title": "(Feb) Sun 25",
@@ -937,8 +827,7 @@
       "completed": false,
       "month": "march",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "5dfa7",
@@ -949,8 +838,7 @@
       "completed": false,
       "month": "march",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "5dsfg8",
@@ -961,8 +849,7 @@
       "completed": false,
       "month": "march",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "5fdag9",
@@ -973,8 +860,7 @@
       "completed": false,
       "month": "march",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "6sdgs0",
@@ -985,8 +871,7 @@
       "completed": false,
       "month": "march",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "61",
@@ -997,8 +882,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "62",
@@ -1009,16 +893,8 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
-
-
-
-
-
-
-
     {
       "id": "63",
       "title": "Sun 3",
@@ -1028,8 +904,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "64",
@@ -1040,8 +915,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "65",
@@ -1052,8 +926,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "66",
@@ -1064,8 +937,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "67",
@@ -1076,8 +948,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "68",
@@ -1088,8 +959,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "69",
@@ -1100,14 +970,8 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
-
-
-
-
-
     {
       "id": "70",
       "title": "Sun 10",
@@ -1117,8 +981,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "71",
@@ -1129,8 +992,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "72",
@@ -1141,8 +1003,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "73",
@@ -1153,8 +1014,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "74",
@@ -1165,8 +1025,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "75",
@@ -1177,8 +1036,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "76",
@@ -1189,16 +1047,8 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
-
-
-
-
-
-
-
     {
       "id": "77",
       "title": "Sun 17",
@@ -1208,8 +1058,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "78",
@@ -1220,8 +1069,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "79",
@@ -1232,8 +1080,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "80",
@@ -1244,8 +1091,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "81",
@@ -1256,8 +1102,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "2 ",
@@ -1268,8 +1113,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "83",
@@ -1280,15 +1124,8 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
-
-
-
-
-
-
     {
       "id": "84",
       "title": "Sun 24",
@@ -1298,8 +1135,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "85",
@@ -1310,8 +1146,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "86",
@@ -1322,8 +1157,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "87",
@@ -1334,8 +1168,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "88",
@@ -1346,8 +1179,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "89",
@@ -1358,8 +1190,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "90",
@@ -1370,8 +1201,7 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "91",
@@ -1382,18 +1212,8 @@
       "completed": false,
       "month": "march",
       "year": 2024,
-      "disabled": false,
-      "week": 6
+      "disabled": false
     },
-
-
-
-
-
-
-
-
-
     {
       "id": "91hgg",
       "title": "(March) Sun 31",
@@ -1403,8 +1223,7 @@
       "completed": false,
       "month": "april",
       "disabled": true,
-      "year": 2024,
-      "week": 1
+      "year": 2024
     },
     {
       "id": "92",
@@ -1415,8 +1234,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "93",
@@ -1427,8 +1245,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "94",
@@ -1439,8 +1256,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "95",
@@ -1451,8 +1267,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "96",
@@ -1463,8 +1278,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
     {
       "id": "97",
@@ -1475,15 +1289,8 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 1
+      "disabled": false
     },
-
-
-
-
-
-
     {
       "id": "98",
       "title": "Sun 7",
@@ -1493,8 +1300,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "99",
@@ -1505,8 +1311,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "100",
@@ -1517,8 +1322,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "101",
@@ -1529,8 +1333,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "102",
@@ -1541,8 +1344,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "103",
@@ -1553,8 +1355,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
     {
       "id": "104",
@@ -1565,17 +1366,8 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 2
+      "disabled": false
     },
-
-
-
-
-
-
-
-
     {
       "id": "105",
       "title": "Sun 14",
@@ -1585,8 +1377,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "106",
@@ -1597,8 +1388,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "107",
@@ -1609,8 +1399,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "108",
@@ -1621,8 +1410,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "109",
@@ -1633,8 +1421,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "110",
@@ -1645,8 +1432,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
     {
       "id": "111",
@@ -1657,18 +1443,8 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 3
+      "disabled": false
     },
-
-
-
-
-
-
-
-
-
     {
       "id": "112",
       "title": "Sun 21",
@@ -1678,8 +1454,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "113",
@@ -1690,8 +1465,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "114",
@@ -1702,8 +1476,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "115",
@@ -1714,8 +1487,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "116",
@@ -1726,8 +1498,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "117",
@@ -1738,8 +1509,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
     {
       "id": "118",
@@ -1750,21 +1520,8 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 4
+      "disabled": false
     },
-
-
-
-
-
-
-
-
-
-
-
-
     {
       "id": "119",
       "title": "Sun 28",
@@ -1774,8 +1531,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "120",
@@ -1786,8 +1542,7 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
     {
       "id": "121",
@@ -1798,14 +1553,8 @@
       "completed": false,
       "month": "april",
       "year": 2024,
-      "disabled": false,
-      "week": 5
+      "disabled": false
     },
-
-
-
-
-    
     {
       "id": "119asd",
       "title": "Sun",
@@ -4735,7 +4484,7 @@
   ],
   "dates": [
     {
-      "id": 1,
+      "id": "1",
       "week": 1,
       "month": "january",
       "parentId": 332333333,
@@ -4743,7 +4492,7 @@
       "year": 2024
     },
     {
-      "id": 2,
+      "id": "2",
       "week": 2,
       "month": "january",
       "parentId": 332333333,
@@ -4751,7 +4500,7 @@
       "year": 2024
     },
     {
-      "id": 3,
+      "id": "3",
       "week": 3,
       "month": "january",
       "parentId": 332333333,
@@ -4759,7 +4508,7 @@
       "year": 2024
     },
     {
-      "id": 4,
+      "id": "4",
       "week": 4,
       "month": "january",
       "parentId": 332333333,
@@ -4767,7 +4516,7 @@
       "year": 2024
     },
     {
-      "id": 5,
+      "id": "5",
       "week": 5,
       "month": "january",
       "parentId": 332333333,
@@ -4775,7 +4524,7 @@
       "year": 2024
     },
     {
-      "id": 6,
+      "id": "6",
       "week": 1,
       "month": "february",
       "parentId": 332333333,
@@ -4783,7 +4532,7 @@
       "year": 2024
     },
     {
-      "id": 7,
+      "id": "7",
       "week": 2,
       "month": "february",
       "parentId": 332333333,
@@ -4791,7 +4540,7 @@
       "year": 2024
     },
     {
-      "id": 8,
+      "id": "8",
       "week": 3,
       "month": "february",
       "parentId": 332333333,
@@ -4799,7 +4548,7 @@
       "year": 2024
     },
     {
-      "id": 9,
+      "id": "9",
       "week": 4,
       "month": "february",
       "parentId": 332333333,
@@ -4807,7 +4556,7 @@
       "year": 2024
     },
     {
-      "id": 10,
+      "id": "10",
       "week": 5,
       "month": "february",
       "parentId": 332333333,
@@ -4815,7 +4564,7 @@
       "year": 2024
     },
     {
-      "id": 11,
+      "id": "11",
       "week": 1,
       "month": "march",
       "parentId": 332333333,
@@ -4823,7 +4572,7 @@
       "year": 2024
     },
     {
-      "id": 12,
+      "id": "12",
       "week": 2,
       "month": "march",
       "parentId": 332333333,
@@ -4831,7 +4580,7 @@
       "year": 2024
     },
     {
-      "id": 13,
+      "id": "13",
       "week": 3,
       "month": "march",
       "parentId": 332333333,
@@ -4839,7 +4588,7 @@
       "year": 2024
     },
     {
-      "id": 14,
+      "id": "14",
       "week": 4,
       "month": "march",
       "parentId": 332333333,
@@ -4847,7 +4596,7 @@
       "year": 2024
     },
     {
-      "id": 15,
+      "id": "15",
       "week": 5,
       "month": "march",
       "parentId": 332333333,
@@ -4855,7 +4604,7 @@
       "year": 2024
     },
     {
-      "id": 16,
+      "id": "16",
       "week": 6,
       "month": "march",
       "parentId": 332333333,
@@ -4863,7 +4612,7 @@
       "year": 2024
     },
     {
-      "id": 17,
+      "id": "17",
       "week": 1,
       "month": "april",
       "parentId": 332333333,
@@ -4871,7 +4620,7 @@
       "year": 2024
     },
     {
-      "id": 18,
+      "id": "18",
       "week": 2,
       "month": "april",
       "parentId": 332333333,
@@ -4879,7 +4628,7 @@
       "year": 2024
     },
     {
-      "id": 19,
+      "id": "19",
       "week": 3,
       "month": "april",
       "parentId": 332333333,
@@ -4887,7 +4636,7 @@
       "year": 2024
     },
     {
-      "id": 20,
+      "id": "20",
       "week": 4,
       "month": "april",
       "parentId": 332333333,
@@ -4895,7 +4644,7 @@
       "year": 2024
     },
     {
-      "id": 21,
+      "id": "21",
       "week": 5,
       "month": "april",
       "parentId": 332333333,
@@ -4903,7 +4652,7 @@
       "year": 2024
     },
     {
-      "id": 22,
+      "id": "22",
       "week": 1,
       "month": "may",
       "parentId": 332333333,
@@ -4911,7 +4660,7 @@
       "year": 2024
     },
     {
-      "id": 23,
+      "id": "23",
       "week": 2,
       "month": "may",
       "parentId": 332333333,
@@ -4919,7 +4668,7 @@
       "year": 2024
     },
     {
-      "id": 24,
+      "id": "24",
       "week": 3,
       "month": "may",
       "parentId": 332333333,
@@ -4927,7 +4676,7 @@
       "year": 2024
     },
     {
-      "id": 25,
+      "id": "25",
       "week": 4,
       "month": "may",
       "parentId": 332333333,
@@ -4935,7 +4684,7 @@
       "year": 2024
     },
     {
-      "id": 26,
+      "id": "26",
       "week": 5,
       "month": "may",
       "parentId": 332333333,
@@ -4943,7 +4692,7 @@
       "year": 2024
     },
     {
-      "id": 27,
+      "id": "27",
       "week": 1,
       "month": "june",
       "parentId": 332333333,
@@ -4951,7 +4700,7 @@
       "year": 2024
     },
     {
-      "id": 28,
+      "id": "28",
       "week": 2,
       "month": "june",
       "parentId": 332333333,
@@ -4959,7 +4708,7 @@
       "year": 2024
     },
     {
-      "id": 29,
+      "id": "29",
       "week": 3,
       "month": "june",
       "parentId": 332333333,
@@ -4967,7 +4716,7 @@
       "year": 2024
     },
     {
-      "id": 30,
+      "id": "30",
       "week": 4,
       "month": "june",
       "parentId": 332333333,
@@ -4975,7 +4724,7 @@
       "year": 2024
     },
     {
-      "id": 31,
+      "id": "31",
       "week": 5,
       "month": "june",
       "parentId": 332333333,
@@ -4983,7 +4732,7 @@
       "year": 2024
     },
     {
-      "id": 32,
+      "id": "32",
       "week": 6,
       "month": "june",
       "parentId": 332333333,
@@ -4991,7 +4740,7 @@
       "year": 2024
     },
     {
-      "id": 33,
+      "id": "33",
       "week": 1,
       "month": "july",
       "parentId": 332333333,
@@ -4999,7 +4748,7 @@
       "year": 2024
     },
     {
-      "id": 34,
+      "id": "34",
       "week": 2,
       "month": "july",
       "parentId": 332333333,
@@ -5007,7 +4756,7 @@
       "year": 2024
     },
     {
-      "id": 35,
+      "id": "35",
       "week": 3,
       "month": "july",
       "parentId": 332333333,
@@ -5015,7 +4764,7 @@
       "year": 2024
     },
     {
-      "id": 36,
+      "id": "36",
       "week": 4,
       "month": "july",
       "parentId": 332333333,
@@ -5023,7 +4772,7 @@
       "year": 2024
     },
     {
-      "id": 37,
+      "id": "37",
       "week": 5,
       "month": "july",
       "parentId": 332333333,
@@ -5031,7 +4780,7 @@
       "year": 2024
     },
     {
-      "id": 38,
+      "id": "38",
       "week": 1,
       "month": "august",
       "parentId": 332333333,
@@ -5039,7 +4788,7 @@
       "year": 2024
     },
     {
-      "id": 39,
+      "id": "39",
       "week": 2,
       "month": "august",
       "parentId": 332333333,
@@ -5047,7 +4796,7 @@
       "year": 2024
     },
     {
-      "id": 40,
+      "id": "40",
       "week": 3,
       "month": "august",
       "parentId": 332333333,
@@ -5055,7 +4804,7 @@
       "year": 2024
     },
     {
-      "id": 41,
+      "id": "41",
       "week": 4,
       "month": "august",
       "parentId": 332333333,
@@ -5063,7 +4812,7 @@
       "year": 2024
     },
     {
-      "id": 42,
+      "id": "42",
       "week": 5,
       "month": "august",
       "parentId": 332333333,
@@ -5071,7 +4820,7 @@
       "year": 2024
     },
     {
-      "id": 43,
+      "id": "43",
       "week": 1,
       "month": "september",
       "parentId": 332333333,
@@ -5079,7 +4828,7 @@
       "year": 2024
     },
     {
-      "id": 44,
+      "id": "44",
       "week": 2,
       "month": "september",
       "parentId": 332333333,
@@ -5087,7 +4836,7 @@
       "year": 2024
     },
     {
-      "id": 45,
+      "id": "45",
       "week": 3,
       "month": "september",
       "parentId": 332333333,
@@ -5095,7 +4844,7 @@
       "year": 2024
     },
     {
-      "id": 46,
+      "id": "46",
       "week": 4,
       "month": "september",
       "parentId": 332333333,
@@ -5103,7 +4852,7 @@
       "year": 2024
     },
     {
-      "id": 47,
+      "id": "47",
       "week": 5,
       "month": "september",
       "parentId": 332333333,
@@ -5111,7 +4860,7 @@
       "year": 2024
     },
     {
-      "id": 48,
+      "id": "48",
       "week": 1,
       "month": "october",
       "parentId": 332333333,
@@ -5119,7 +4868,7 @@
       "year": 2024
     },
     {
-      "id": 49,
+      "id": "49",
       "week": 2,
       "month": "october",
       "parentId": 332333333,
@@ -5127,7 +4876,7 @@
       "year": 2024
     },
     {
-      "id": 50,
+      "id": "50",
       "week": 3,
       "month": "october",
       "parentId": 332333333,
@@ -5135,7 +4884,7 @@
       "year": 2024
     },
     {
-      "id": 51,
+      "id": "51",
       "week": 4,
       "month": "october",
       "parentId": 332333333,
@@ -5143,7 +4892,7 @@
       "year": 2024
     },
     {
-      "id": 52,
+      "id": "52",
       "week": 5,
       "month": "october",
       "parentId": 332333333,
@@ -5151,7 +4900,7 @@
       "year": 2024
     },
     {
-      "id": 53,
+      "id": "53",
       "week": 1,
       "month": "november",
       "parentId": 332333333,
@@ -5159,7 +4908,7 @@
       "year": 2024
     },
     {
-      "id": 54,
+      "id": "54",
       "week": 2,
       "month": "november",
       "parentId": 332333333,
@@ -5167,7 +4916,7 @@
       "year": 2024
     },
     {
-      "id": 55,
+      "id": "55",
       "week": 3,
       "month": "november",
       "parentId": 332333333,
@@ -5175,7 +4924,7 @@
       "year": 2024
     },
     {
-      "id": 56,
+      "id": "56",
       "week": 4,
       "month": "november",
       "parentId": 332333333,
@@ -5183,7 +4932,7 @@
       "year": 2024
     },
     {
-      "id": 57,
+      "id": "57",
       "week": 5,
       "month": "november",
       "parentId": 332333333,
@@ -5191,7 +4940,7 @@
       "year": 2024
     },
     {
-      "id": 58,
+      "id": "58",
       "week": 1,
       "month": "december",
       "parentId": 332333333,
@@ -5199,7 +4948,7 @@
       "year": 2024
     },
     {
-      "id": 59,
+      "id": "59",
       "week": 2,
       "month": "december",
       "parentId": 332333333,
@@ -5207,7 +4956,7 @@
       "year": 2024
     },
     {
-      "id": 60,
+      "id": "60",
       "week": 3,
       "month": "december",
       "parentId": 332333333,
@@ -5215,7 +4964,7 @@
       "year": 2024
     },
     {
-      "id": 61,
+      "id": "61",
       "week": 4,
       "month": "december",
       "parentId": 332333333,
@@ -5223,7 +4972,7 @@
       "year": 2024
     },
     {
-      "id": 62,
+      "id": "62",
       "week": 5,
       "month": "december",
       "parentId": 332333333,
@@ -5279,6 +5028,61 @@
     {
       "id": "12",
       "month": "december"
+    }
+  ],
+  "folders": [
+    {
+      "id": "1",
+      "title": "New Folder (1)"
+    },
+    {
+      "id": "2",
+      "title": "New Folder (2)"
+    },
+    {
+      "id": "3",
+      "title": "New Folder (3)"
+    },
+    {
+      "id": "4",
+      "title": "New Folder (4)"
+    }
+  ],
+  "files": [
+    {
+      "id": "4d23",
+      "folderId": 1,
+      "name": "vid-1.mp4"
+    },
+    {
+      "id": "bf2f",
+      "folderId": 1,
+      "name": "vid-2.mp4"
+    },
+    {
+      "id": "e2a6",
+      "folderId": 1,
+      "name": "vid-3.mp4"
+    },
+    {
+      "id": "c617",
+      "folderId": 1,
+      "name": "vid-4.mp4"
+    },
+    {
+      "id": "9160",
+      "folderId": "2",
+      "name": "1.jpg"
+    },
+    {
+      "id": "8082",
+      "folderId": "2",
+      "name": "4.jpg"
+    },
+    {
+      "id": "50f9",
+      "folderId": "2",
+      "name": "doc-1.docx"
     }
   ]
 }
