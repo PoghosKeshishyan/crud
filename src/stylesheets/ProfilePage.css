@@ -1,13 +1,35 @@
 .ProfilePage {
-    margin: 150px 100px;
+    margin: 150px 100px 0 100px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px;
+}
+
+.ProfilePage .btn.home {
+    position: fixed;
+    z-index: 1001;
+    top: 5%;
+    right: 9.5%;
+    width: 80px;
+    text-align: center;
+}
+
+.ProfilePage .edit_zone {
+    margin-bottom: 40px;
 }
 
 .ProfilePage .editProfile {
     width: 500px;
+}
+
+.ProfilePage .editProfile form {
+    text-align: end;
+}
+
+.ProfilePage .editProfile form .inputBox {
+    text-align: left;
 }
 
 .ProfilePage .editProfile form .inputBox:first-child {
@@ -64,13 +86,58 @@
 
 .ProfilePage .editProfile form .btn {
     margin-top: 10px;
+    font-size: 1rem;
+}
+
+.ProfilePage .editProvider {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--slate-300);
+}
+
+.ProfilePage .editProvider p {
     font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Segoe UI';
+}
+
+.ProfilePage .editProvider form {
+    text-align: end;
+}
+
+.ProfilePage .editProvider form table {
+    margin: 20px 0;
+    width: 100%;
+    border-bottom: 1px solid var(--slate-300);
+}
+
+.ProfilePage .editProvider form table, 
+.ProfilePage .editProvider form table th, 
+.ProfilePage .editProvider form table td {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-collapse: collapse;
+}
+
+.ProfilePage .editProvider form table tr:nth-child(odd) {
+    background-color: var(--yellow);
+}
+
+.ProfilePage .editProvider form table input {
+    width: 100%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background: none;
 }
 
 .ProfilePage .Folders {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 3rem;
+    margin-bottom: 100px;
 }
 
 .ProfilePage .Folders .folder {
@@ -79,15 +146,33 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    cursor: pointer;
+    padding: 8px;
+    width: 130px;
 }
 
 .ProfilePage .Folders .folder img:hover {
     opacity: .6;
 }
 
+.ProfilePage .Folders .folder.active {
+    background: var(--sky);
+}
+
+.ProfilePage .Folders .folder.active p {
+    color: var(--white);
+}
+
+.ProfilePage .Folders .folder input {
+    width: 120px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .ProfilePage .Folders .folder p {
-    margin-top: 10px;
+    margin-top: 20px;
+    cursor: pointer;
     color: var(--sky);
     font-family: Arial, Helvetica, sans-serif;
 }

@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 
 export function ProfileFolderPage() {
   const [files, setFiles] = useState([]);
   const { folderId } = useParams();
-  const navigate = useNavigate();
 
   useEffect(() => {
     loadingData();
@@ -14,6 +13,23 @@ export function ProfileFolderPage() {
   const loadingData = async () => {
     const response = await axios.get(`http://localhost:3000/files?folderId=${folderId}`);
     setFiles(response.data);
+  }
+
+  const addFolderHandler = async (event) => {
+    event.preventDefault();
+
+    const file = event.target.files[0];
+
+    if (!file.size) {
+      return;
+    }
+
+    const fd = new FormData();
+    fd.append('file', file);
+
+    await axios.post('http://localhost:5000/upload', fd);
+    await axios.post('http://localhost:3000/files', { folderId, name: file.name });
+    loadingData();
   }
 
   const deleteFileHandler = async (id) => {
@@ -29,7 +45,7 @@ export function ProfileFolderPage() {
 
   return (
     <div className="ProfileFolderPage">
-      <button className="btn" onClick={() => navigate(-1)}>Go back</button>
+      <Link to='/profile' className='btn home'>Profile</Link>
 
       {
         !files.length && (
@@ -60,6 +76,11 @@ export function ProfileFolderPage() {
           ))
         }
       </div>
+
+      <label className="file-upload-container" htmlFor="file-upload">
+        <span className='btn file'>add new file</span>
+        <input type="file" id="file-upload" onChange={addFolderHandler} />
+      </label>
     </div>
   )
 }

@@ -2,7 +2,20 @@
     margin: 150px 50px;
 }
 
-.ProfileFolderPage .btn {
+.ProfileFolderPage .btn.home {
+    position: fixed;
+    z-index: 1001;
+    top: 5%;
+    right: 9.5%;
+    width: 80px;
+    text-align: center;
+}
+
+.ProfileFolderPage .file-upload-container input[type=file] {
+    display: none;
+}
+
+.ProfileFolderPage .btn.file {
     font-size: 1rem;
 }
 

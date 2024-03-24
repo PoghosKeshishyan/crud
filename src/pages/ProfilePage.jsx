@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { Folders } from "../components/Folders";
+import { Link } from "react-router-dom";
 import axios from "axios";
-import { ModalAddFile } from "../components/ModalAddFile";
 
 export function ProfilePage() {
+  const [provider, setProvider] = useState({name: '', address: '', telephone: '', email: ''});
   const [folders, setFolders] = useState([]);
   const [header, setHeader] = useState({ title: '', logo: '' });
-  const [showModal, setShowModal] = useState(false);
   const [showSubmitBtn, setShowSubmitBtn] = useState(false);
+  const [showSubmitBtnProvider, setShowSubmitBtnProvider] = useState(false);
+  const [keyDownActive, setKeyDownActive] = useState(null);
+  const [activeFolder, setActiveFolder] = useState(null);
   const [file, setFile] = useState(null);
 
   useEffect(() => {
@@ -17,6 +20,9 @@ export function ProfilePage() {
   const loadingData = async () => {
     const responseHeader = await axios.get('http://localhost:3000/header');
     setHeader(responseHeader.data);
+
+    const responseProvider = await axios.get('http://localhost:3000/provider');
+    setProvider(responseProvider.data);
 
     const responseFolders = await axios.get('http://localhost:3000/folders');
     setFolders(responseFolders.data);
@@ -33,6 +39,31 @@ export function ProfilePage() {
     setHeader({ ...header, logo: `http://localhost:5000/uploads/${event.target.files[0].name}` })
   };
 
+  const onChangeProviderInput = (event) => {
+    setShowSubmitBtnProvider(true);
+    setProvider({ ...provider, [event.target.name]: event.target.value });
+  }
+
+  const onChangeFolderName = (event, id) => {
+    const newFolders = folders.map(folder => {
+      if (folder.id === id) {
+        folder.title = event.target.value;
+      }
+
+      return folder;
+    })
+
+    setFolders(newFolders);
+  }
+
+  const onSubmitChangeFolderName = async (event, id) => {
+    event.preventDefault();
+    const currentFolder = folders.find(folder => folder.id === id);
+    await axios.put(`http://localhost:3000/folders/${id}`, currentFolder);
+    setKeyDownActive(false);
+    setActiveFolder(false);
+  }
+
   const onSubmitHandler = async (event) => {
     event.preventDefault();
 
@@ -44,36 +75,112 @@ export function ProfilePage() {
     window.location.reload();
   };
 
+  const onSubmitHandlerProvider = async (event) => {
+    event.preventDefault();
+    await axios.put('http://localhost:3000/provider', provider);
+    setShowSubmitBtnProvider(false);
+  }
+
   return (
     <div className='ProfilePage'>
-      <div className="editProfile">
-        <form onSubmit={onSubmitHandler}>
-          <div className="inputBox">
-            <p>Edit header title</p>
-            <input type="text" value={header.title} name="title" onChange={onChangeInput} />
-          </div>
+      <Link to='/' className='btn home'>Home</Link>
 
-          <div className="inputBox">
-            <p>Edit header logo</p>
+      <div className="edit_zone">
+        <div className="editProfile">
+          <form onSubmit={onSubmitHandler}>
+            <div className="inputBox">
+              <p>Edit header title</p>
+              <input type="text" value={header.title} name="title" onChange={onChangeInput} />
+            </div>
 
-            <label className="file-upload-container" htmlFor="file-upload">
-              <span className="file-upload-button">Choose File</span>
+            <div className="inputBox">
+              <p>Edit header logo</p>
 
-              <input type="file" accept="image/*" id="file-upload" onChange={onChangeLogo} />
+              <label className="file-upload-container" htmlFor="file-upload">
+                <span className="file-upload-button">Choose File</span>
 
-              <span className="file-upload-label">{header.logo.slice(29)}</span>
-            </label>
-          </div>
+                <input type="file" accept="image/*" id="file-upload" onChange={onChangeLogo} />
 
-          {showSubmitBtn && <input type="submit" value="Submit" className="btn" />}
-        </form>
+                <span className="file-upload-label">{header.logo.slice(29)}</span>
+              </label>
+            </div>
+
+            {showSubmitBtn && <input type="submit" value="Submit" className="btn" />}
+          </form>
+        </div>
+
+        <div className="editProvider">
+          <p>Edit provider's data</p>
+
+          <form onSubmit={onSubmitHandlerProvider} className='providerForm'>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Provider's name:</td>
+                  <td>
+                    <input
+                      type='text'
+                      name='name'
+                      value={provider.name}
+                      onChange={onChangeProviderInput}
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Address:</td>
+                  <td>
+                    <input
+                      type='text'
+                      name='address'
+                      value={provider.address}
+                      onChange={onChangeProviderInput}
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Tel.</td>
+                  <td>
+                    <input
+                      type='text'
+                      name='telephone'
+                      value={provider.telephone}
+                      onChange={onChangeProviderInput}
+                    />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>E-mail:</td>
+                  <td>
+                    <input
+                      type='text'
+                      name='email'
+                      value={provider.email}
+                      onChange={onChangeProviderInput}
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            {
+              showSubmitBtnProvider && <input type='submit' value='Update' className='btn' />
+            }
+          </form>
+        </div>
       </div>
 
-      <Folders folders={folders} setShowModal={setShowModal} />
-
-      {
-        showModal && <ModalAddFile setShowModal={setShowModal} folders={folders} />
-      }
+      <Folders 
+        folders={folders} 
+        keyDownActive={keyDownActive}
+        activeFolder={activeFolder}
+        setKeyDownActive={setKeyDownActive}
+        setActiveFolder={setActiveFolder}
+        onChangeFolderName={onChangeFolderName} 
+        onSubmitChangeFolderName={onSubmitChangeFolderName}
+      />
     </div>
   );
 }

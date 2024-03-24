@@ -5,6 +5,7 @@ import axios from '../axios';
 
 export function HomePage() {
     const [client, setClient] = useState([]);
+    const [provider, setProvider] = useState({});
     const [showModal, setShowModal] = useState(false);
     const navigate = useNavigate();
 
@@ -18,6 +19,9 @@ export function HomePage() {
 
         const responseChildren = await axios.get('children');
         const childrenData = responseChildren.data;
+
+        const responseProvider = await axios.get('provider');
+        setProvider(responseProvider.data);
 
         const combinedData = parentsData.map(parent => {
             const children = childrenData.filter(child => child.parentId === parent.id);
@@ -87,6 +91,31 @@ export function HomePage() {
                 <button className='btn client' onClick={() => setShowModal(true)}>
                     + add client
                 </button>
+            </div>
+
+            <div className="provider">
+                <h2>Provider</h2>
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Name</th>
+                            <td>{provider.name}</td>
+                        </tr>
+                        <tr>
+                            <th>Telephone</th>
+                            <td>{provider.address}</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>{provider.telephone}</td>
+                        </tr>
+                        <tr>
+                            <th>E-mail</th>
+                            <td>{provider.email}</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             {

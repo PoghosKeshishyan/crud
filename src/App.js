@@ -31,7 +31,7 @@ export function App() {
           <Route path='/profile' element={<ProfilePage />} />
           <Route path='/profile/folder/:folderId' element={<ProfileFolderPage />} />
           <Route path='/client/:id' element={<ClientPage />} />
-          <Route path='/client/:id/:month' element={<DetailPage />} />
+          <Route path='/client/:id/:month/:year' element={<DetailPage />} />
           <Route path='/client/:id/:month/:week/result' element={<SendEmailPage />} />
         </Routes>
       </main>

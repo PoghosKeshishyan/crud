@@ -7,7 +7,6 @@
 @import './ProfileFolderPage.css';
 @import './ModalAddClient.css';
 @import './ModalAddChild.css';
-@import './ModalAddFile.css';
 
 * {
     margin: 0;
@@ -43,6 +42,7 @@ body {
     padding: 5px 10px;
     color: var(--black);
     font-family: Arial;
+    font-size: 1rem;
     background: var(--slate-300);
     border: 1px solid var(--slate-700);
 }

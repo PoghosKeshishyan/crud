@@ -46,7 +46,7 @@ export function Calendar({ days, onCheckDay, onChangeInput, calculateTotalTime, 
                                 Email
                             </button>
                             
-                            <p>{item[1].title}</p>
+                            {/* <p>{item[1].title}</p> */}
                         </div>
                     </div>
                 ))

@@ -5,6 +5,9 @@ import axios from '../axios';
 
 export function ClientPage() {
     const [months, setMonths] = useState([]);
+    const [years, setYears] = useState([]);
+    const [showYearsContainer, setShowYearsContainer] = useState(false);
+    const [selectedYear, setSelectedYear] = useState();
     const [showModal, setShowModal] = useState(false);
     const [showSubmitBtnParent, setShowSubmitBtnParent] = useState(false);
     const [showSubmitBtnChild, setShowSubmitBtnChild] = useState(false);
@@ -32,6 +35,22 @@ export function ClientPage() {
 
         const responseMonths = await axios.get('months');
         setMonths(responseMonths.data);
+
+        const responseYears = await axios.get('years');
+        setYears(responseYears.data);
+
+        // selected year
+        if (sessionStorage.getItem('Year')) {
+            setSelectedYear(sessionStorage.getItem('Year'))
+        } else {
+            setSelectedYear(new Date().getFullYear());
+        }
+    }
+
+    const onChangeYear = (event) => {
+        setSelectedYear(event.target.textContent);
+        sessionStorage.setItem('Year', event.target.textContent);
+        setShowYearsContainer(false);
     }
 
     const onChangeParentsInput = (event) => {
@@ -218,13 +237,27 @@ export function ClientPage() {
             <div className='months'>
                 <div className='title'>
                     <h3>Attendance</h3>
-                    <p>2024</p>
+                    <p className='years_title' onClick={() => setShowYearsContainer(!showYearsContainer)}>
+                        {selectedYear}
+                    </p>
+
+                    {
+                        showYearsContainer && <div className="years_container">
+                            {
+                                years.map(item => (
+                                    <p key={item.id} onClick={onChangeYear}>
+                                        {item.year}
+                                    </p>
+                                ))
+                            }
+                        </div>
+                    }
                 </div>
 
                 <div className='months_container'>
                     {
                         months.map((item, index) => (
-                            <Link to={`/client/${id}/${item.month}`} key={index}>
+                            <Link to={`/client/${id}/${item.month}/${selectedYear}`} key={index}>
                                 {item.month}
                             </Link>
                         ))

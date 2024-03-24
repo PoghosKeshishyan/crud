@@ -25,10 +25,15 @@ export function ModalAddClient({ setShowModal, loadingClients }) {
     return (
         <div className='ModalAddClient'>
             <div className='dark_bg' onClick={() => setShowModal(false)}></div>
-            <div className='close_modal' onClick={() => setShowModal(false)}>&times;</div>
 
             <form onSubmit={submitHandler}>
-                <h2 className='title'>Add client</h2>
+                <h2 className='title'>
+                    Add client
+                    
+                    <span className='close_modal' onClick={() => setShowModal(false)}>
+                        &times;
+                    </span>
+                </h2>
 
                 <div className='form_item'>
                     <p>Parent's name:</p>

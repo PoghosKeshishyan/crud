@@ -7,7 +7,7 @@ export function DetailPage() {
     const [client, setClient] = useState([]);
     const [child, setChild] = useState([]);
     const [days, setDays] = useState([]);
-    const { id, month } = useParams();
+    const { id, month, year } = useParams();
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -22,9 +22,9 @@ export function DetailPage() {
         setChild(responseChildren.data[0]);
 
         const responseDates = await axios.get(`dates?parentId=${id}&month=${month}`);
-        const dates = responseDates.data;
+        // const dates = responseDates.data;
 
-        const responseDays = await axios.get(`days?parentId=${id}&month=${month}`);
+        const responseDays = await axios.get(`days?parentId=${id}&year=${year}&month=${month}`);
 
         const newDays = responseDays.data.reduce((acc, curr, index) => {
             const subIndex = Math.floor(index / 7);
@@ -38,7 +38,7 @@ export function DetailPage() {
         }, []);
 
         const result = newDays.map((day, index) => {
-            return [day, dates[index]];
+            return [day];
         })
 
         setDays(result);
@@ -136,7 +136,7 @@ export function DetailPage() {
             <h3 className='title'>Attendance</h3>
 
             <div className='info_client'>
-                <p className='month'>{month}-24</p>
+                <p className='month'>{month}-{year}</p>
                 <p>Child’s Name: {child.name}</p>
             </div>
 
